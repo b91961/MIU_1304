@@ -367,5 +367,92 @@ window.addEventListener("DOMContentLoaded", function(){
 	clearData.addEventListener("click", clearStorage);
 	var save = get("submitButton");
 	save.addEventListener("click", validate);
+	
+/*	//Search
+	var search = get("searchButton");
+	search.addEventListener("click", showSearch);
+
+	function showSearch(){
+		var category = get("groups").value;
+		var term = get("search").value;
+	
+		//Search by Term only.
+		if(term ===""){
+			for(var i=0, len=localStorage.length; i=<len;i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				for(n in item){
+					if(term === item[n][1]){
+						for (q in item){
+							console.log(item[q][0]+": "+item[q][1]);
+						}
+					}
+				}		
+			}
+		}
+		
+		//Search by Category System Installed.
+		if(category != "--Type of System--" && term==""){
+			for(var i=0, len=localStorage.length; i<len;1++){
+				var key = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				if(category === item.group[1]){
+					for(n in item){
+						console.log(item[n][0]+": "+item[n][1]);
+					}	
+				}
+			}
+		}
+		
+		//Search by Category Client ID.
+		if(category != "--Type of System--" && term==""){
+			for(var i=0, len=localStorage.length; i<len;1++){
+				var key = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				if(category === item.group[1]){
+					for(n in item){
+						console.log(item[n][0]+": "+item[n][1]);
+					}	
+				}
+			}
+		}
+		//Search by Category Company Name.
+		if(category != "--Type of System--" && term==""){
+			for(var i=0, len=localStorage.length; i<len;1++){
+				var key = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				if(category === item.group[1]){
+					for(n in item){
+						console.log(item[n][0]+": "+item[n][1]);
+					}	
+				}
+			}
+		}
+		//Search by Category Contact Name.
+		if(category != "--Type of System--" && term==""){
+			for(var i=0, len=localStorage.length; i<len;1++){
+				var key = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				if(category === item.group[1]){
+					for(n in item){
+						console.log(item[n][0]+": "+item[n][1]);
+					}	
+				}
+			}
+		}
+		//Search by Category Warranty.
+		if(category != "--Type of System--" && term==""){
+			for(var i=0, len=localStorage.length; i<len;1++){
+				var key = localStorage.getItem(key);
+				var item = JSON.parse(value);
+				if(category === item.group[1]){
+					for(n in item){
+						console.log(item[n][0]+": "+item[n][1]);
+					}	
+				}
+			}
+		}
+	}*/	
 });
 
