@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <!--
 Jamal Moubarak
-Project 3
-VFW 1303
+Project 2
+MiU 1304
 -->
-<html class=index>
+	<html class="en">
 	<!--HTML DOCUMENT HEADER -->
 	<head>
     	<meta charset="UTF-8" />
+    	
+    	<title>Eskatech Surveillance Client List</title>
+    	
     	<meta name="description" content="Eskatech Surveillance Client List" />
     	<meta name="keywords" content="Eskatech, surveillance, network, cameras, dvr, Toledo, Detroit" />
-    	<meta name="robots" content="index, follow" />
-    	<meta name="viewport" content="user-scalable=no, width=device-width" />
-    	<meta name="viewport" content="target-densitydpi=device-dpi" />
     	<meta name="HandheldFriendly" content="True">
     	<meta name="MobileOptimized" content="320"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta http-equiv="cleartype" content="on">
     	
-    	<title>Eskatech Surveillance Client Install Log</title>
+    	<link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.css" />
+    	<link rel="stylesheet" href="css/style.css" />
     	
-    	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+    	<script src="js/libs/modernizr.custom.min.js"></script>
     
     </head>
     
     <body>
-    	<!--Heading Group -->
-		<header>
-			<div class="logo">
+    	
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Client List</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
 				<img src="img/logo.png" title="Eskatech Logo" />
-			</div>
-		</header>
-			<div class="ctaImage">
-				<a href="additem.html"><img src="img/ctaIndex.png" title="Customer Service" /></a>
-			</div>
-			<h1><label for="search">Search</label><br><input type="text" id="search" class=searchinput /></h1>
-			<div class="searchButton">
-				<input type="image" src="img/searchButton.png" class=searchButton id="searchButton" alt="search" /><br>
-			</div>
-			<div id="results"></div>
-			<h2>Browse By Category</h2>
-			<div class="categoryButtons">
-				<a href="additem.html"><img src="img/systemInstalled.png" class=systemInstalled title="System Installed Button" /></a><br>
-				<a href="additem.html"><img src="img/clientId.png" class=clientId title="Client ID Button" /></a><br>
-				<a href="additem.html"><img src="img/companyName.png" class=companyName title="Company Name Button" /></a><br>
-				<a href="additem.html"><img src="img/contactName.png" class=contactName title="Contact Name Button" /></a><br>
-				<a href="additem.html"><img src="img/warrantyButton.png" class=warrantyButton title="Warranty Button" /></a>
-			</div>
+				</div>
+			</header>
+					<a href="additem.html"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a>
+				<form>
+					<input type="search" name="search" id="search" placeholder="Search Clients">
+				</form>
+				<div id="results"></div>
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider">Browse By Category</li>
+				    <li><a href="systemInstalled.html"><img src="img/systemIcon.png" alt="System Installed" class="ui-li-icon ui-corner-none">System Installed</a></li>
+				    <li><a href="clientId.html"><img src="img/clientIcon.png" alt="Client ID" class="ui-li-icon">Client ID</a></li>
+				    <li><a href="companyName.html"><img src="img/companyIcon.png" alt="Company Name" class="ui-li-icon">Company Name</a></li>
+				    <li><a href="contactName.html"><img src="img/contactIcon.png" alt="Contact Name" class="ui-li-icon">Contact Name</a></li>
+				    <li><a href="warranty.html"><img src="img/warrantyIcon.png" alt="Warranty" class="ui-li-icon ui-corner-none">Warranty</a></li>										
+				</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#" data-icon="info">Info</a></li>
+	                <li><a href="#" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>
