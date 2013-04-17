@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+Jamal Moubarak
+Project 4
+VFW 1303
+-->
+<html>
+	<!--HTML DOCUMENT HEADER -->
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="description" content="Eskatech Surveillance Client List" />
+    	<meta name="keywords" content="Eskatech, surveillance, network, cameras, dvr, Toledo, Detroit" />
+    	<meta name="robots" content="index, follow" />
+    	<meta name="viewport" content="user-scalable=no, width=device-width" />
+    	<meta name="viewport" content="target-densitydpi=device-dpi" />
+    	<meta name="HandheldFriendly" content="True">
+    	<meta name="MobileOptimized" content="320"/>
+    	
+    	<title>Eskatech Surveillance Client Install Log</title>
+    	
+    	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+    	    	<!--Heading Group -->
+		<header>
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" title="Eskatech Logo" /></a>
+			</div>
+			<div class="ctaImage">
+				<img src="img/ctaAddItem.png" title="Customer Service" />
+			</div>
+			<div class="links">
+				<a href="#" id="displayData">Display Stored Data</a>
+				<a href="#" id="clear">Clear Stored Data</a>
+				<a href="additem.html" id="addClient" style="display:none;">Add New Client</a>
+			</div>
+		</header>
+		<form action="#" method="post" id="installForm" />
+			<fieldset id="installFieldset">
+				<legend>Client Info</legend>
+				<ul id="errors"></ul>
+				<ul id= "clientInfo">
+				<p>*Fields are Required</p>
+					<li id="select"><label for="group">*Type of System:</label><br class=txtinput /></li>
+					<li><label for="compname">*Company Name:</label><br><input type="text" id="compname" class=txtinput /></li>
+					<li><label for="contname">*Contact Name:</label><br><input type="text" id="contname" class=txtinput /></li>
+					<li><label for="contphone">*Contact Phone #:</label><br><input type="text" id="contphone" placeholder="xxx-xxx-xxxx" maxlength="12" size="12" class=txtinput /></li>
+					<li><label for="contemail">*Contact Email:</label><br><input type="email" id="contemail" placeholder="example@gmail.com" class=txtinput /></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Install Info</legend>
+				<ul id= "installInfo">
+					<li><label for="date">Date:</label><br><input type="date" id="date" placeholder="mm-dd-yyyy" class=txtinput /></li>
+					<li><label for="ipaddress">Ip Address:</label><br><input type="text" id="ipaddress" placeholder="192.168.001.001" class=txtinput /></li>
+					<li><label for="sysuser">System Username:</label><br><input type="text" id="sysuser" class=txtinput /></li>
+					<li><label for="syspass">System Password:</label><br><input type="text" id="syspass" class=txtinput /></li>
+					<li>Check all Systems Installed:
+						<ul>
+							<li><input type="checkbox" value="Surveillance" id="surveillance" name="installed" class=chkinput /><label for="surveillance">Surveillance</label></li>
+							<li><input type="checkbox" value="Audio / Video" id="audiovideo" name="installed" class=chkinput /><label for="audiovideo">Audio / Video</label></li>
+							<li><input type="checkbox" value="Network" id="network" name="installed" class=chkinput /><label for="network">Network</label></li>
+							<li><input type="checkbox" value="POS" id="pos" name="installed" class=chkinput /><label for="pos">POS</label></li>
+						</ul>
+					</li>
+					<li>Quantity (# of Cameras, TV's, POS Terminals, etc):
+						<ul>
+							<li><label for="quanity"><input type="range" id="quanity" min="0" max="32" value="0" step="1" /><span id="range">0</span></li>
+						</ul>
+					</li>
+					<li>Warranty:
+						<ul>
+							<li><input type="radio" value="90 Days" id="90days" name="warranty" class=radinput /><label for="90days">90 Days</label></li>
+							<li><input type="radio" value="1 Year" id="1year" name="warranty" class=radinput /><label for="1year">1 Year</label></li>
+							<li><input type="radio" value="3 Year" id="3year" name="warranty" class=radinput /><label for="3year">3 Year</label></li>
+							<li><input type="radio" value="5 Year" id="5year" name="warranty" class=radinput /><label for="5year">5 Year</label></li>
+						</ul>
+					</li>
+					<div id="priceField">
+						<li><label for="price">System cost:</label><br><input type="password" id="price" class=txtinput placeholder="$0.00" /></li>
+					</div>
+					<li><label for="notes">Additional Information:</label><br><textarea id="notes" class=txtinput placeholder="Type additional information here."></textarea></li>
+				</ul>
+			</fieldset>
+			<div class="saveButton">
+				<input type="image" src="img/submitButton.jpg" width="130" height="35" border="0" id="submitButton" alt="Submit Form"></li>
+				<input type="image" src="img/editClientButton.jpg" width="130" height="28" border="0" id="editClientButton" alt="Submit Form"></li>
+			</div>
+		</form>
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>			
+    </body>
+</html>
+
+
