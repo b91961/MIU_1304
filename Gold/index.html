@@ -19,7 +19,7 @@ MiU 1304
     	<meta http-equiv="cleartype" content="on">
     	
     	<link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.css" />
-    	<link rel="stylesheet" href="css/style.css" />
+    	<!--<link rel="stylesheet" href="css/style.css" />-->
     	
     	<script src="js/libs/modernizr.custom.min.js"></script>
     
@@ -36,35 +36,260 @@ MiU 1304
 		<div data-role="content">
 			<header>
 				<div class="logo">
-				<img src="img/logo.png" title="Eskatech Logo" />
+					<img src="img/logo.png" title="Eskatech Logo" />
 				</div>
 			</header>
-					<a href="additem.html"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a>
-				<form>
-					<input type="search" name="search" id="search" placeholder="Search Clients">
-				</form>
-				<div id="results"></div>
-				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider">Browse By Category</li>
-				    <li><a href="systemInstalled.html"><img src="img/systemIcon.png" alt="System Installed" class="ui-li-icon ui-corner-none">System Installed</a></li>
-				    <li><a href="clientId.html"><img src="img/clientIcon.png" alt="Client ID" class="ui-li-icon">Client ID</a></li>
-				    <li><a href="companyName.html"><img src="img/companyIcon.png" alt="Company Name" class="ui-li-icon">Company Name</a></li>
-				    <li><a href="contactName.html"><img src="img/contactIcon.png" alt="Contact Name" class="ui-li-icon">Contact Name</a></li>
-				    <li><a href="warranty.html"><img src="img/warrantyIcon.png" alt="Warranty" class="ui-li-icon ui-corner-none">Warranty</a></li>										
-				</ul>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+				<div class="cats">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search clients..." data-inset="true" data-divider-theme="a">
+						<li data-role="list-divider">Browse By Category</li>
+					    <li><a href="#surveillance"><img src="img/surveillance.png" alt="Surveillance">Surveillance</a></li>
+					    <li><a href="#audioVideo"><img src="img/audioVideo.png" alt="Audio / Video">Audio / Video</a></li>
+					    <li><a href="#network"><img src="img/network.png" alt="Network">Network</a></li>
+					    <li><a href="#pos"><img src="img/pos.png" alt="POS">POS</a></li>
+					    <li><a href="#warranty"><img src="img/warranty.png" alt="Warranty">Warranty</a></li>										
+					</ul>
+				</div>
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 	            <ul>
-	                <li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
-	                <li><a href="#" data-icon="info">Info</a></li>
-	                <li><a href="#" data-icon="bars">Recent Clients</a></li>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
 	            </ul>
             </div>
 		</div>	
 			
 	</div>
+	
+	<div data-role="page" id="surveillance" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Surveillance</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="audioVideo" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Audio / Video</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="network" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Network</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="pos" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>POS/h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="warranty" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="info" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Info</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="recent" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Recent Clients</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<h4>This page is currently under construction.</h4>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.js"></script>
