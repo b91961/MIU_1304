@@ -8,6 +8,7 @@ VFW 1303
 html {
     background-color: #f4f5f8;
 }
+#content ul + li { margin-left: -50em; }
 a:link {
 	color: blue;
 }
@@ -85,7 +86,7 @@ legend {
     -webkit-border-radius: 10px;
 }
 .installIcon {
-	margin: -1em 0em -3em -1em;
+	margin: .2em 1em .2em .5em;
 }
 #errors {
 	color: red
@@ -114,6 +115,6 @@ legend {
 .logo {
 	text-align: left;
 }
-.ctaImage {
-	border: 31px solid #e11010;
+#home .ui-grid-solo div{
+	padding: 20px 10px;
 }
