@@ -1,50 +1,1427 @@
 <!DOCTYPE html>
 <!--
 Jamal Moubarak
-Project 3
-VFW 1303
+Project 2
+MiU 1304
 -->
-<html class=index>
+	<html class="en">
 	<!--HTML DOCUMENT HEADER -->
 	<head>
     	<meta charset="UTF-8" />
+    	
+    	<title>Eskatech Surveillance Client List</title>
+    	
     	<meta name="description" content="Eskatech Surveillance Client List" />
     	<meta name="keywords" content="Eskatech, surveillance, network, cameras, dvr, Toledo, Detroit" />
-    	<meta name="robots" content="index, follow" />
-    	<meta name="viewport" content="user-scalable=no, width=device-width" />
-    	<meta name="viewport" content="target-densitydpi=device-dpi" />
     	<meta name="HandheldFriendly" content="True">
     	<meta name="MobileOptimized" content="320"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta http-equiv="cleartype" content="on">
     	
-    	<title>Eskatech Surveillance Client Install Log</title>
+    	<link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.css" />
+    	<!--<link rel="stylesheet" href="css/style.css" />-->
     	
-    	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+    	<script src="js/libs/modernizr.custom.min.js"></script>
     
     </head>
     
     <body>
-    	<!--Heading Group -->
-		<header>
+    	
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Client List</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+				
+				<div class="browse">
+					<div class="search">
+						<ul data-role="listview" data-filter="true" data-filter-placeholder="Search clients..." data-inset="true" data-divider-theme="a">
+							<li data-role="list-divider">Browse By Category</li>										
+						</ul>
+					</div>
+					
+					<div class="ui-grid-b">
+					    <div class="ui-block-a"><div class="ui-bar-f" style="height:60px"><a href="#surveillance"><img src="img/surveillance.png" alt="Surveillance" id="Surveillance"><br>Surveillance</a></div></div>
+					    <div class="ui-block-b"><div class="ui-bar-f" style="height:60px"><a href="#audioVideo"><img src="img/audioVideo.png" alt="Audio / Video" id="audioVideo"><br>Audio / Video</a></div></div>
+					    <div class="ui-block-c"><div class="ui-bar-f" style="height:60px"><a href="#network"><img src="img/network.png" alt="Network" id="network"><br>Network</a></div></div>
+					    <div class="ui-block-a"><div class="ui-bar-f" style="height:60px"><a href="#pos"><img src="img/pos.png" alt="POS" id="pos"><br>POS</a></div></div>
+					    <div class="ui-block-b"><div class="ui-bar-f" style="height:60px"><a href="#warranty"><img src="img/warranty.png" alt="Warranty" id="warranty"><br>Warranty</a></div></div>
+					</div>
+				</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="surveillance" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Surveillance</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+					<!--<ul data-role="listview" data-filter="true" data-filter-placeholder="Search clients..." data-inset="true" data-divider-theme="a">-->
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Clazel Theatre</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 20628884</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Erica Hall</li>
+						        <li>Contact Phone #: 412-318-3800</li>
+						        <li>Contact Email: babyhallsmommie@gmail.com</li>
+						        <li>Install Date: 2012-02-28</li>
+						        <li>IP Address: 10.0.0.138</li>
+						        <li>System Username: erica</li>
+						        <li>System Password: 666666</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 8</li>
+						        <li>Price: $2995.00</li>
+						        <li>Notes: We installed 8 cameras inside the theatre with the DVR in the office.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Fairfield Inn</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 87654321</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: John Smith</li>
+						        <li>Contact Phone #: 555-555-2233</li>
+						        <li>Contact Email: john@gmail.com</li>
+						        <li>Install Date: 2012-03-10</li>
+						        <li>IP Address: 192.168.001.100</li>
+						        <li>System Username: john</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 32</li>
+						        <li>Price: $7995.00</li>
+						        <li>Notes: We installed 8 cameras 1st floor, 8 2nd floor, 8 3rd floor, 8 outside.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Haggopian</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 21754202</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Brian Hall</li>
+						        <li>Contact Phone #: 724-653-1653</li>
+						        <li>Contact Email: brianhall@gmail.com</li>
+						        <li>Install Date: 2012-03-20</li>
+						        <li>IP Address: 192.168.1.110</li>
+						        <li>System Username: brian</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $7995.00</li>
+						        <li>Notes: We installed 16 cameras throughout the warehouse.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Kisses Showgirls</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 74929233</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Tim Watts</li>
+						        <li>Contact Phone #: 412-749-4101</li>
+						        <li>Contact Email: kisses419@gmail.com</li>
+						        <li>Install Date: 2012-04-20</li>
+						        <li>IP Address: 192.168.0.1</li>
+						        <li>System Username: timwatts</li>
+						        <li>System Password: password</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 25</li>
+						        <li>Price: $8995.00</li>
+						        <li>Notes: We installed 25 cameras on the 32 channel system.  We let the customer know they have room to add 7 more cameras.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>ParAid Medical</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 98585054</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Allan Marsh</li>
+						        <li>Contact Phone #: 412-319-3900</li>
+						        <li>Contact Email: allanmarsh@gmail.com</li>
+						        <li>Install Date: 2012-07-14</li>
+						        <li>IP Address: 192.168.1.220</li>
+						        <li>System Username: Allan</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: This is another Test.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="audioVideo" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Audio / Video</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Bassetts Foods</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 76408706</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Stephanie Hawkins</li>
+						        <li>Contact Phone #: 412-317-3700</li>
+						        <li>Contact Email: stephaniehawkins@bassets.com</li>
+						        <li>Install Date: 2013-03-18</li>
+						        <li>IP Address: 192.168.11.1</li>
+						        <li>System Username: Stephanie</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $495.00</li>
+						        <li>Notes: We installed 2 speakers by the register.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Detroit Auto</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 15182557</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Jason Cross</li>
+						        <li>Contact Phone #: 724-594-1594</li>
+						        <li>Contact Email: jasoncross@gmail.com</li>
+						        <li>Install Date: 2012-02-14</li>
+						        <li>IP Address: 72.240.153.153</li>
+						        <li>System Username: admin1</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 20</li>
+						        <li>Price: $15995.00</li>
+						        <li>Notes: We installed 20 tv's for the customers to view specials on while in the store.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Ford Motor Company</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 44637039</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Paul Woods</li>
+						        <li>Contact Phone #: 412-481-6022</li>
+						        <li>Contact Email: paulwoods@gmail.com</li>
+						        <li>Install Date: 2011-08-08</li>
+						        <li>IP Address: 192.168.1.1</li>
+						        <li>System Username: paul</li>
+						        <li>System Password: woods</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $8995.00</li>
+						        <li>Notes: We installed 16 speakers in the employee break areas.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Petes Garage</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 98765432</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Pete George</li>
+						        <li>Contact Phone #: 555-555-2222</li>
+						        <li>Contact Email: pete@gmail.com</li>
+						        <li>Install Date: 2013-01-24</li>
+						        <li>IP Address: 192.168.000.99</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the customer area and install a password protected linksys router so they can give wifi to customers.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Sloan Industries</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 22364117</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Lynne Rose</li>
+						        <li>Contact Phone #: 734-802-8679</li>
+						        <li>Contact Email: lynnerose@gmail.com</li>
+						        <li>Install Date: 2013-01-23</li>
+						        <li>IP Address: 192.168.0.153</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: guest</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the office area hooked up to a receiver that the play pandora off of.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="network" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Network</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Blue Agave</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 24155242</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Marion Moon</li>
+						        <li>Contact Phone #: 724-206-2600</li>
+						        <li>Contact Email: marionmoon@gmail.com</li>
+						        <li>Install Date: 2012-07-07</li>
+						        <li>IP Address: 192.169.0.99</li>
+						        <li>System Username: marion</li>
+						        <li>System Password: 888888</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $1045.00</li>
+						        <li>Notes: We installed a wireless access point and a sonic firewall for free wi-fi.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Del Taco</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 23456789</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Jane Smith</li>
+						        <li>Contact Phone #: 555-555-1111</li>
+						        <li>Contact Email: jane@gmail.com</li>
+						        <li>Install Date: 2012-02-30</li>
+						        <li>IP Address: 192.168.001.99</li>
+						        <li>System Username: jane</li>
+						        <li>System Password: deltaco</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $10995.00</li>
+						        <li>Notes: We installed 16 cams and a sonic firewall for free wi-fi.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>HAAS Automation</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 71434983</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Alex May</li>
+						        <li>Contact Phone #: 724-218-2800</li>
+						        <li>Contact Email: alexmay@gmail.com</li>
+						        <li>Install Date: 2012-02-21</li>
+						        <li>IP Address: 192.168.2.1</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: password</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $995.00</li>
+						        <li>Notes: Alex is a great contact person to have.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Holiday Inn Express</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 15972380</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Pat Allen</li>
+						        <li>Contact Phone #: 412-684-1684</li>
+						        <li>Contact Email: patallen@holidayinn.com</li>
+						        <li>Install Date: 2012-11-11</li>
+						        <li>IP Address: 192.168.001.80</li>
+						        <li>System Username: patallen</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 3</li>
+						        <li>Price: $10995.00</li>
+						        <li>Notes: We installed 3 48 port network switches in the rack in the electrical room.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Wireless Boys</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 35133340</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Donald Chung</li>
+						        <li>Contact Phone #: 412-208-2828</li>
+						        <li>Contact Email: donaldchung@gmail.com</li>
+						        <li>Install Date: 2012-10-04</li>
+						        <li>IP Address: 72.124.168.153</li>
+						        <li>System Username: donald</li>
+						        <li>System Password: 111111</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $1995.00</li>
+						        <li>Notes: We installed WiFi for the customers to use when in the store.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="pos" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>POS</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Eskatech</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 12345678</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Jamal Moubarak</li>
+						        <li>Contact Phone #: 734-819-1211</li>
+						        <li>Contact Email: jamal@eskatech.com</li>
+						        <li>Install Date: 2013-03-14</li>
+						        <li>IP Address: 192.168.001.099</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $4595.00</li>
+						        <li>Notes: We installed POS systems at the front counter off of a network switch we installed.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Jacksons Fencing</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 95022888</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: James Jackson</li>
+						        <li>Contact Phone #: 724-203-2300</li>
+						        <li>Contact Email: james@jacksonsfencing.com</li>
+						        <li>Install Date: 2013-01-04</li>
+						        <li>IP Address: 10.0.1.1</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 10</li>
+						        <li>Price: $14595.00</li>
+						        <li>Notes: This is a Test.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Liban Cafe</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 65748084</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Karen Puckett</li>
+						        <li>Contact Phone #: 412-714-7400</li>
+						        <li>Contact Email: karenpuckett@gmail.com</li>
+						        <li>Install Date: 2011-03-17</li>
+						        <li>IP Address: 192.168.0.127</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: libancafe</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $4595.00</li>
+						        <li>Notes: We installed 1 POS system at the customer checkout area.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Scrubs Pub</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 56748923</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Beth Walton</li>
+						        <li>Contact Phone #: 412-517-5700</li>
+						        <li>Contact Email: bwalton5700@yahoo.com</li>
+						        <li>Install Date: 2012-06-23</li>
+						        <li>IP Address: 192.168.1.254</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $12595.00</li>
+						        <li>Notes: The customer has an electrical issue which we let them know their warranty is void if it is not fixed.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Velocity</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 30158185</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Don Sharpe</li>
+						        <li>Contact Phone #: 724-506-1506</li>
+						        <li>Contact Email: don@velocity.com</li>
+						        <li>Install Date: 2013-02-02</li>
+						        <li>IP Address: 192.168.1.100</li>
+						        <li>System Username: don</li>
+						        <li>System Password: don1506</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $8595.00</li>
+						        <li>Notes: We installed 2 POS systems on the front count to control inventory and to check out customers.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="warranty" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div class="cats">
+						<ul data-role="listview" data-filter="true" data-filter-placeholder="Search clients..." data-inset="true" data-divider-theme="a">
+							<li data-role="list-divider">Browse By Warranty Term</li>
+						    <li><a href="#nintyDays">90 Days</a></li>
+						    <li><a href="#oneYear">1 Year</a></li>
+						    <li><a href="#threeYear">3 Year</a></li>
+						    <li><a href="#fiveYear">5 Year</a></li>										
+						</ul>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="nintyDays" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>90 Days Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+				
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Bassetts Foods</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 76408706</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Stephanie Hawkins</li>
+						        <li>Contact Phone #: 412-317-3700</li>
+						        <li>Contact Email: stephaniehawkins@bassets.com</li>
+						        <li>Install Date: 2013-03-18</li>
+						        <li>IP Address: 192.168.11.1</li>
+						        <li>System Username: Stephanie</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $495.00</li>
+						        <li>Notes: We installed 2 speakers by the register.</li>
+						    </ul>
+					    </div>
+					</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Petes Garage</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 98765432</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Pete George</li>
+						        <li>Contact Phone #: 555-555-2222</li>
+						        <li>Contact Email: pete@gmail.com</li>
+						        <li>Install Date: 2013-01-24</li>
+						        <li>IP Address: 192.168.000.99</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the customer area and install a password protected linksys router so they can give wifi to customers.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Sloan Industries</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 22364117</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Lynne Rose</li>
+						        <li>Contact Phone #: 734-802-8679</li>
+						        <li>Contact Email: lynnerose@gmail.com</li>
+						        <li>Install Date: 2013-01-23</li>
+						        <li>IP Address: 192.168.0.153</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: guest</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the office area hooked up to a receiver that the play pandora off of.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+		
+	<div data-role="page" id="oneYear" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>1 Year Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Blue Agave</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 24155242</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Marion Moon</li>
+						        <li>Contact Phone #: 724-206-2600</li>
+						        <li>Contact Email: marionmoon@gmail.com</li>
+						        <li>Install Date: 2012-07-07</li>
+						        <li>IP Address: 192.169.0.99</li>
+						        <li>System Username: marion</li>
+						        <li>System Password: 888888</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $1045.00</li>
+						        <li>Notes: We installed a wireless access point and a sonic firewall for free wi-fi.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Clazel Theatre</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 20628884</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Erica Hall</li>
+						        <li>Contact Phone #: 412-318-3800</li>
+						        <li>Contact Email: babyhallsmommie@gmail.com</li>
+						        <li>Install Date: 2012-02-28</li>
+						        <li>IP Address: 10.0.0.138</li>
+						        <li>System Username: erica</li>
+						        <li>System Password: 666666</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 8</li>
+						        <li>Price: $2995.00</li>
+						        <li>Notes: We installed 8 cameras inside the theatre with the DVR in the office.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Detroit Auto</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 15182557</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Jason Cross</li>
+						        <li>Contact Phone #: 724-594-1594</li>
+						        <li>Contact Email: jasoncross@gmail.com</li>
+						        <li>Install Date: 2012-02-14</li>
+						        <li>IP Address: 72.240.153.153</li>
+						        <li>System Username: admin1</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 20</li>
+						        <li>Price: $15995.00</li>
+						        <li>Notes: We installed 20 tv's for the customers to view specials on while in the store.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Eskatech</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 12345678</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Jamal Moubarak</li>
+						        <li>Contact Phone #: 734-819-1211</li>
+						        <li>Contact Email: jamal@eskatech.com</li>
+						        <li>Install Date: 2013-03-14</li>
+						        <li>IP Address: 192.168.001.099</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $4595.00</li>
+						        <li>Notes: We installed POS systems at the front counter off of a network switch we installed.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>HAAS Automation</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 71434983</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Alex May</li>
+						        <li>Contact Phone #: 724-218-2800</li>
+						        <li>Contact Email: alexmay@gmail.com</li>
+						        <li>Install Date: 2012-02-21</li>
+						        <li>IP Address: 192.168.2.1</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: password</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $995.00</li>
+						        <li>Notes: Alex is a great contact person to have.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+		
+	<div data-role="page" id="threeYear" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>3 Year Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Del Taco</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 23456789</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Jane Smith</li>
+						        <li>Contact Phone #: 555-555-1111</li>
+						        <li>Contact Email: jane@gmail.com</li>
+						        <li>Install Date: 2012-02-30</li>
+						        <li>IP Address: 192.168.001.99</li>
+						        <li>System Username: jane</li>
+						        <li>System Password: deltaco</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $10995.00</li>
+						        <li>Notes: We installed 16 cams and a sonic firewall for free wi-fi.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Fairfield Inn</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 87654321</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: John Smith</li>
+						        <li>Contact Phone #: 555-555-2233</li>
+						        <li>Contact Email: john@gmail.com</li>
+						        <li>Install Date: 2012-03-10</li>
+						        <li>IP Address: 192.168.001.100</li>
+						        <li>System Username: john</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 32</li>
+						        <li>Price: $7995.00</li>
+						        <li>Notes: We installed 8 cameras 1st floor, 8 2nd floor, 8 3rd floor, 8 outside.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Ford Motor Company</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 44637039</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Paul Woods</li>
+						        <li>Contact Phone #: 412-481-6022</li>
+						        <li>Contact Email: paulwoods@gmail.com</li>
+						        <li>Install Date: 2011-08-08</li>
+						        <li>IP Address: 192.168.1.1</li>
+						        <li>System Username: paul</li>
+						        <li>System Password: woods</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $8995.00</li>
+						        <li>Notes: We installed 16 speakers in the employee break areas.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Haggopian</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 21754202</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Brian Hall</li>
+						        <li>Contact Phone #: 724-653-1653</li>
+						        <li>Contact Email: brianhall@gmail.com</li>
+						        <li>Install Date: 2012-03-20</li>
+						        <li>IP Address: 192.168.1.110</li>
+						        <li>System Username: brian</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $7995.00</li>
+						        <li>Notes: We installed 16 cameras throughout the warehouse.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Holiday Inn Express</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 15972380</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Pat Allen</li>
+						        <li>Contact Phone #: 412-684-1684</li>
+						        <li>Contact Email: patallen@holidayinn.com</li>
+						        <li>Install Date: 2012-11-11</li>
+						        <li>IP Address: 192.168.001.80</li>
+						        <li>System Username: patallen</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 3</li>
+						        <li>Price: $10995.00</li>
+						        <li>Notes: We installed 3 48 port network switches in the rack in the electrical room.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Jacksons Fencing</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 95022888</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: James Jackson</li>
+						        <li>Contact Phone #: 724-203-2300</li>
+						        <li>Contact Email: james@jacksonsfencing.com</li>
+						        <li>Install Date: 2013-01-04</li>
+						        <li>IP Address: 10.0.1.1</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 10</li>
+						        <li>Price: $14595.00</li>
+						        <li>Notes: This is a Test.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Kisses Showgirls</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 74929233</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Tim Watts</li>
+						        <li>Contact Phone #: 412-749-4101</li>
+						        <li>Contact Email: kisses419@gmail.com</li>
+						        <li>Install Date: 2012-04-20</li>
+						        <li>IP Address: 192.168.0.1</li>
+						        <li>System Username: timwatts</li>
+						        <li>System Password: password</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 25</li>
+						        <li>Price: $8995.00</li>
+						        <li>Notes: We installed 25 cameras on the 32 channel system.  We let the customer know they have room to add 7 more cameras.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Wireless Boys</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 35133340</li>
+						        <li>Install: Network</li>
+						        <li>Contact Name: Donald Chung</li>
+						        <li>Contact Phone #: 412-208-2828</li>
+						        <li>Contact Email: donaldchung@gmail.com</li>
+						        <li>Install Date: 2012-10-04</li>
+						        <li>IP Address: 72.124.168.153</li>
+						        <li>System Username: donald</li>
+						        <li>System Password: 111111</li>
+						        <li>The client has these systems installed: Network</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $1995.00</li>
+						        <li>Notes: We installed WiFi for the customers to use when in the store.</li>
+						    </ul>
+					    </div>
+					</div>
+
+
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+		
+	<div data-role="page" id="fiveYear" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>5 Year Warranty</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Liban Cafe</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 65748084</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Karen Puckett</li>
+						        <li>Contact Phone #: 412-714-7400</li>
+						        <li>Contact Email: karenpuckett@gmail.com</li>
+						        <li>Install Date: 2011-03-17</li>
+						        <li>IP Address: 192.168.0.127</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: libancafe</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 1</li>
+						        <li>Price: $4595.00</li>
+						        <li>Notes: We installed 1 POS system at the customer checkout area.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>ParAid Medical</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 98585054</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Allan Marsh</li>
+						        <li>Contact Phone #: 412-319-3900</li>
+						        <li>Contact Email: allanmarsh@gmail.com</li>
+						        <li>Install Date: 2012-07-14</li>
+						        <li>IP Address: 192.168.1.220</li>
+						        <li>System Username: Allan</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 16</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: This is another Test.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Scrubs Pub</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 56748923</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Beth Walton</li>
+						        <li>Contact Phone #: 412-517-5700</li>
+						        <li>Contact Email: bwalton5700@yahoo.com</li>
+						        <li>Install Date: 2012-06-23</li>
+						        <li>IP Address: 192.168.1.254</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $12595.00</li>
+						        <li>Notes: The customer has an electrical issue which we let them know their warranty is void if it is not fixed.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Velocity</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 30158185</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Don Sharpe</li>
+						        <li>Contact Phone #: 724-506-1506</li>
+						        <li>Contact Email: don@velocity.com</li>
+						        <li>Install Date: 2013-02-02</li>
+						        <li>IP Address: 192.168.1.100</li>
+						        <li>System Username: don</li>
+						        <li>System Password: don1506</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $8595.00</li>
+						        <li>Notes: We installed 2 POS systems on the front count to control inventory and to check out customers.</li>
+						    </ul>
+					    </div>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="info" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Info</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
 			<div class="logo">
-				<img src="img/logo.png" title="Eskatech Logo" />
+				<a href="index.html"><img src="img/logo.png" title="Eskatech Logo" /></a>
 			</div>
-		</header>
-			<div class="ctaImage">
-				<a href="additem.html"><img src="img/ctaIndex.png" title="Customer Service" /></a>
-			</div>
-			<h1><label for="search">Search</label><br><input type="text" id="search" class=searchinput /></h1>
-			<div class="searchButton">
-				<input type="image" src="img/searchButton.png" class=searchButton id="searchButton" alt="search" /><br>
-			</div>
-			<div id="results"></div>
-			<h2>Browse By Category</h2>
-			<div class="categoryButtons">
-				<a href="additem.html"><img src="img/systemInstalled.png" class=systemInstalled title="System Installed Button" /></a><br>
-				<a href="additem.html"><img src="img/clientId.png" class=clientId title="Client ID Button" /></a><br>
-				<a href="additem.html"><img src="img/companyName.png" class=companyName title="Company Name Button" /></a><br>
-				<a href="additem.html"><img src="img/contactName.png" class=contactName title="Contact Name Button" /></a><br>
-				<a href="additem.html"><img src="img/warrantyButton.png" class=warrantyButton title="Warranty Button" /></a>
-			</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+					<div class="links">
+						<h2><a href="index.html">Home page</a></h2>
+						<h2><a href="https://github.com/b91961/MIU_1304">Git Repo</a></h2>
+						<h2><a href="https://github.com/b91961/MIU_1304/branches">Git Branches</a></h2>
+						<h2><a href="https://github.com/b91961/MIU_1304/tree/master/Bronze">Bronze App</a></h2>
+						<h2><a href="https://github.com/b91961/MIU_1304/tree/master/Gold">Gold App</a></h2>
+					</div>
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home" >Home</a></li>
+	                <li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+	                <li><a href="#recent" data-icon="bars">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+	<div data-role="page" id="recent" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Recent Clients</h1>
+		</div>
+		
+		<div data-role="content">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" title="Eskatech Logo" />
+				</div>
+			</header>
+				<div class="ui-grid-solo">
+					<div class="ui-block-a"><a href="additem.html"><div class="ui-bar-a"><img src="img/ctaIndex.png" title="Customer Service"  class="ctaImage" /></a></div></div>
+				</div>
+
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Bassetts Foods</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 76408706</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Stephanie Hawkins</li>
+						        <li>Contact Phone #: 412-317-3700</li>
+						        <li>Contact Email: stephaniehawkins@bassets.com</li>
+						        <li>Install Date: 2013-03-18</li>
+						        <li>IP Address: 192.168.11.1</li>
+						        <li>System Username: Stephanie</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $495.00</li>
+						        <li>Notes: We installed 2 speakers by the register.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Eskatech</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 12345678</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Jamal Moubarak</li>
+						        <li>Contact Phone #: 734-819-1211</li>
+						        <li>Contact Email: jamal@eskatech.com</li>
+						        <li>Install Date: 2013-03-14</li>
+						        <li>IP Address: 192.168.001.099</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $4595.00</li>
+						        <li>Notes: We installed POS systems at the front counter off of a network switch we installed.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Fairfield Inn</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 20628884</li>
+						        <li>Install: Surveillance</li>
+						        <li>Contact Name: Erica Hall</li>
+						        <li>Contact Phone #: 412-318-3800</li>
+						        <li>Contact Email: babyhallsmommie@gmail.com</li>
+						        <li>Install Date: 2012-02-28</li>
+						        <li>IP Address: 10.0.0.138</li>
+						        <li>System Username: erica</li>
+						        <li>System Password: 666666</li>
+						        <li>The client has these systems installed: Surveillance</li>
+						        <li>The client has this warranty: 1 Year</li>
+						        <li>Quanity: 8</li>
+						        <li>Price: $2995.00</li>
+						        <li>Notes: We installed 8 cameras inside the theatre with the DVR in the office.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Velocity</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 30158185</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: Don Sharpe</li>
+						        <li>Contact Phone #: 724-506-1506</li>
+						        <li>Contact Email: don@velocity.com</li>
+						        <li>Install Date: 2013-02-02</li>
+						        <li>IP Address: 192.168.1.100</li>
+						        <li>System Username: don</li>
+						        <li>System Password: don1506</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 5 Year</li>
+						        <li>Quanity: 2</li>
+						        <li>Price: $8595.00</li>
+						        <li>Notes: We installed 2 POS systems on the front count to control inventory and to check out customers.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Petes Garage</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 98765432</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Pete George</li>
+						        <li>Contact Phone #: 555-555-2222</li>
+						        <li>Contact Email: pete@gmail.com</li>
+						        <li>Install Date: 2013-01-24</li>
+						        <li>IP Address: 192.168.000.99</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: 123456</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the customer area and install a password protected linksys router so they can give wifi to customers.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Sloan Industries</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 22364117</li>
+						        <li>Install: AudioVideo</li>
+						        <li>Contact Name: Lynne Rose</li>
+						        <li>Contact Phone #: 734-802-8679</li>
+						        <li>Contact Email: lynnerose@gmail.com</li>
+						        <li>Install Date: 2013-01-23</li>
+						        <li>IP Address: 192.168.0.153</li>
+						        <li>System Username: guest</li>
+						        <li>System Password: guest</li>
+						        <li>The client has these systems installed: Audio / Video</li>
+						        <li>The client has this warranty: 90 Days</li>
+						        <li>Quanity: 4</li>
+						        <li>Price: $3995.00</li>
+						        <li>Notes: We installed 4 speakers in the office area hooked up to a receiver that the play pandora off of.</li>
+						    </ul>
+					    </div>
+					</div>
+					<div data-role="collapsible" data-theme="a" data-content-theme="d" data-inset="true">
+					    <h3>Jacksons Fencing</h3>
+					    <div class="clients">
+						    <ul>
+						        <li>Client ID: 95022888</li>
+						        <li>Install: POS</li>
+						        <li>Contact Name: James Jackson</li>
+						        <li>Contact Phone #: 724-203-2300</li>
+						        <li>Contact Email: james@jacksonsfencing.com</li>
+						        <li>Install Date: 2013-01-04</li>
+						        <li>IP Address: 10.0.1.1</li>
+						        <li>System Username: admin</li>
+						        <li>System Password: admin</li>
+						        <li>The client has these systems installed: POS</li>
+						        <li>The client has this warranty: 3 Year</li>
+						        <li>Quanity: 10</li>
+						        <li>Price: $14595.00</li>
+						        <li>Notes: This is a Test.</li>
+						    </ul>
+					    </div>
+					</div>
+
+
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+	            <ul>
+	                <li><a href="#home" data-icon="home">Home</a></li>
+	                <li><a href="#info" data-icon="info">Info</a></li>
+	                <li><a href="#recent" data-icon="bars" class="ui-btn-active">Recent Clients</a></li>
+	            </ul>
+            </div>
+		</div>	
+			
+	</div>
+	
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>
