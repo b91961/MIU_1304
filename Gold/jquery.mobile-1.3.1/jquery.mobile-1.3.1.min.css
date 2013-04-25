@@ -6,98 +6,6 @@
 html {
     background-color: #f4f5f8;
 }
-
-fieldset {
-    font-family: helvetica, arial, sans-serif;
-    font-size: 80%;
-    color: #4D4B39;
-    line-height: 1.5em;
-    margin: 0em 0em 0em 0.5em;
-    padding: 1em 3em 0em 0em;
-    background-color: #eaeaea;
-    border: 5px solid #707070;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-ul {
-	list-style: none;
-}
-legend {
-	color: #ff8c05;	
-}
-.saveButton {
-	text-align: right;
-	margin-top: 0.2em;
-}
-#editClientButton {
-	display: none;
-}
-.txtinput {
-    -webkit-transition-property: -webkit-box-shadow, background;
-    -webkit-transition-duration: 0.25s;
-    padding: 0.6em;
-    border: 0.1em solid #8baceb;
-    -moz-box-shadow: 0em 0em 0.2em #000;
-    -webkit-box-shadow: 0em 0em 0.2em #000;
-    margin-bottom: 0.3em;
-    background: #f7f9fa;
-    width: 19em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-.dropdown {
-	-webkit-transition-property: -webkit-box-shadow, background;
-    -webkit-transition-duration: 0.25s;
-    padding: 0.6em;
-    border: .2em solid #8baceb;
-    -moz-box-shadow: 0em 0em 0.2em #000;
-    -webkit-box-shadow: 0em 0em 0.2em #000;
-    margin-bottom: 0.3em;
-    background: #f7f9fa;
-    width: 20.5em;
-    height: 2.7em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;	
-}
-#items ul {
-	list-style: none;	
-	font-family: helvetica, arial, sans-serif;
-    font-size: 90%;
-    padding: 0.3em;
-    background-color: #eaeaea;
-    color: #4D4B39;
-    border: 0.3em solid #707070;
-    line-height: 1.3em;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-.installIcon {
-	margin: .2em 1em .2em .5em;
-}
-#errors {
-	color: red
-}
-#quanity {
-	width: 13.2em;
-}
-#range {
-    -webkit-transition-property: -webkit-box-shadow, background;
-    -webkit-transition-duration: 0.25s;
-    padding: 0.5em;
-    border: 0.1em solid #8baceb;
-    -moz-box-shadow: 0em 0em 0.2em #000;
-    -webkit-box-shadow: 0em 0em 0.2em #000;
-    margin-left: 0.5em;
-    background: #f7f9fa;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-.links {
-	text-align: center;
-}
-#addClient {
-	margin-left: 1.3em;
-}
 .logo {
 	text-align: left;
 }
@@ -108,4 +16,6 @@ legend {
 	padding: 1em 1em 1em 1em;
 	
 }
-
+.links {
+	text-align: center;
+}
