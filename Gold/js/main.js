@@ -2,17 +2,16 @@ $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
 		
-$('#index').on('pageinit', function(){
+$('#addItem').on('pageinit', function(){
 
-		var myForm = $('#addItem');
+		var myForm = $('#formId');
 		    myForm.validate({
 			invalidHandler: function(form, validator) {
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
-			saveData(data);
+			storeData(data);
 		}
-		
 	});
 	
 	//Get the value of the checkInputs when clicked.
@@ -72,11 +71,11 @@ $('#index').on('pageinit', function(){
 	};
 		
 	//Get image for getData.
-	function chooseImage(installCat, chooseSubList){
+	function chooseImage($("#groups"), chooseSubList){
 		var imgLi = document.createElement("li");
 		chooseSubList.appendChild(imgLi);
 		var nextImg = document.createElement("img");
-		var insertImg = nextImg.setAttribute("src", "img/"+ installCat + ".png");
+		var insertImg = nextImg.setAttribute("src", "img/"+ $("#groups") + ".png");
 		nextImg.setAttribute("class", "installIcon");
 		imgLi.appendChild(nextImg);	
 	};
@@ -225,7 +224,7 @@ var clearData = $("#clear");
 clearData.addEventListener("click", clearStorage);
 var save = $("#submitButton");
 save.addEventListener("click", validate);
-		
+	
 });
 
 
