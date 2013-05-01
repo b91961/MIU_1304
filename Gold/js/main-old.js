@@ -2,7 +2,7 @@
 
 // Jamal Moubarak
 // Project 4
-// VFW 1303
+// MiU 1304
 
 //Wait until DOM is loaded
 window.addEventListener("DOMContentLoaded", function(){
