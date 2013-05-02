@@ -6,11 +6,11 @@ $('#addItem').on('pageinit', function(){
 
 		var myForm = $('#formId');
 		    myForm.validate({
-			invalidHandler: function(form, validator) {
+			invalidHandler: function(form, validate) {
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
-			storeData(data);
+			saveData(data);
 		}
 	});
 	
